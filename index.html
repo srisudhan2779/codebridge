@@ -3,57 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CodeBridge helps students build coding skills through approachable lessons, hands-on practice, and projects.">
     <link rel="stylesheet" href="codebridge.css">
-    <title>CodeBridge</title>
+    <title>CodeBridge | Your Bridge to the World of Coding</title>
 </head>
 <body>
     <header class="site-header">
         <nav class="navigation" aria-label="Main navigation">
-            <a class="brand" href="#home" aria-label="CodeBridge home">
+            <a class="brand" href="index.html" aria-label="CodeBridge home">
                 <span class="brand-mark" aria-hidden="true">CB</span>
                 <span>CodeBridge</span>
             </a>
             <div class="nav-links">
-                <a class="nav-link active" href="#home">Home</a>
-                <a class="nav-link" href="#learn">Learn</a>
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+                <a class="nav-link" href="lessons.html">Lessons</a>
+                <a class="nav-link" href="contact.html">Contact</a>
             </div>
-            <a class="nav-action" href="#learn">Explore topics <span aria-hidden="true">&#8594;</span></a>
+            <a class="nav-action" href="lessons.html">Explore lessons <span aria-hidden="true">&#8594;</span></a>
         </nav>
     </header>
 
     <main id="home">
-        <section class="intro" aria-labelledby="intro-title">
+        <section class="intro home-hero" aria-labelledby="intro-title">
             <p class="eyebrow"><span class="status-dot"></span> A place to make ideas click</p>
-            <h1 id="intro-title">Your next step<br>starts <span>with code.</span></h1>
-            <p class="intro-copy">A welcoming space to explore technology, sharpen your skills, and turn curiosity into something real.</p>
-            <a class="primary-link" href="#learn">Find your starting point <span aria-hidden="true">&#8594;</span></a>
+            <h1 id="intro-title">Your bridge to<br>the world of <span>coding.</span></h1>
+            <p class="intro-copy">Start with curiosity. Build practical programming skills with friendly lessons, hands-on practice, and projects that bring your ideas to life.</p>
+            <a class="primary-link" href="lessons.html">Explore Lessons <span aria-hidden="true">&#8594;</span></a>
             <div class="intro-note"><span class="note-rule"></span><span>Learn at your pace. Build with purpose.</span></div>
         </section>
 
-        <section class="learning-section" id="learn" aria-labelledby="learn-title">
-            <div class="section-heading">
-                <p class="eyebrow">THE BRIDGE</p>
-                <h2 id="learn-title">Make the next move.</h2>
+        <section class="home-section about-section" aria-labelledby="about-title">
+            <div class="home-section-copy">
+                <p class="eyebrow">ABOUT CODEBRIDGE</p>
+                <h2 id="about-title">A welcoming place to find your way into tech.</h2>
+                <p>CodeBridge makes programming accessible to students at every experience level. Our goal is to turn the first intimidating steps into a clear, encouraging path—so more students can understand how technology works and what they can create with it.</p>
             </div>
-            <div class="topic-list">
-                <a class="topic" href="#about">
-                    <span class="topic-number">01</span>
-                    <span class="topic-text"><strong>Explore the foundations</strong><span>Get comfortable with the building blocks of the web.</span></span>
-                    <span class="topic-arrow" aria-hidden="true">&#8599;</span>
-                </a>
-                <a class="topic" href="#about">
-                    <span class="topic-number">02</span>
-                    <span class="topic-text"><strong>Turn learning into practice</strong><span>Connect new skills to projects you can call your own.</span></span>
-                    <span class="topic-arrow" aria-hidden="true">&#8599;</span>
-                </a>
+            <span class="about-mark" aria-hidden="true">{ }</span>
+        </section>
+
+        <section class="home-section offerings-section" aria-labelledby="offerings-title">
+            <div class="section-heading">
+                <p class="eyebrow">WHAT WE OFFER</p>
+                <h2 id="offerings-title">Learn by doing, one step at a time.</h2>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <span class="feature-number">01</span>
+                    <h3>Friendly lessons</h3>
+                    <p>Build understanding with approachable tutorials that explain the basics clearly.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-number">02</span>
+                    <h3>Hands-on practice</h3>
+                    <p>Try coding exercises that help new ideas stick through active problem-solving.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-number">03</span>
+                    <h3>Personal projects</h3>
+                    <p>Use what you learn to make useful, creative projects of your own.</p>
+                </article>
             </div>
         </section>
 
-        <section class="about-section" id="about" aria-label="About CodeBridge">
-            <span class="about-mark" aria-hidden="true">{ }</span>
-            <p>CodeBridge is about making technology feel a little more <span>within reach.</span></p>
+        <section class="home-section paths-section" aria-labelledby="paths-title">
+            <div class="section-heading">
+                <p class="eyebrow">LEARNING PATHS</p>
+                <h2 id="paths-title">Choose a language. Start building.</h2>
+            </div>
+            <p class="section-intro">Explore the building blocks of the web or take your first steps with general-purpose programming.</p>
+            <div class="path-list" aria-label="Programming subjects">
+                <a class="path-chip" href="lessons.html#python">Python <span aria-hidden="true">&#8599;</span></a>
+                <a class="path-chip" href="lessons.html#java">Java <span aria-hidden="true">&#8599;</span></a>
+                <a class="path-chip" href="lessons.html#html">HTML <span aria-hidden="true">&#8599;</span></a>
+                <a class="path-chip" href="lessons.html#css">CSS <span aria-hidden="true">&#8599;</span></a>
+                <a class="path-chip" href="lessons.html#javascript">JavaScript <span aria-hidden="true">&#8599;</span></a>
+            </div>
+        </section>
+
+        <section class="home-section benefits-section" aria-labelledby="benefits-title">
+            <div class="section-heading">
+                <p class="eyebrow">WHY CHOOSE CODEBRIDGE</p>
+                <h2 id="benefits-title">Skills that reach beyond the screen.</h2>
+            </div>
+            <div class="benefit-row">
+                <p><span aria-hidden="true">01 /</span> Learn to break big challenges into manageable steps.</p>
+                <p><span aria-hidden="true">02 /</span> Grow confidence by making ideas work in practice.</p>
+                <p><span aria-hidden="true">03 /</span> Develop technical skills you can use in real projects.</p>
+            </div>
+        </section>
+
+        <section class="callout-section" aria-labelledby="callout-title">
+            <div>
+                <p class="eyebrow">YOUR NEXT STEP</p>
+                <h2 id="callout-title">Ready to make something?</h2>
+                <p>Pick a topic and find a comfortable place to begin.</p>
+            </div>
+            <a class="primary-link" href="lessons.html">Explore Lessons <span aria-hidden="true">&#8594;</span></a>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">CB</span><span>CodeBridge</span></a>
+        <p>Learn at your pace. Build with purpose.</p>
+        <a href="contact.html">Get in touch <span aria-hidden="true">&#8594;</span></a>
+    </footer>
 </body>
 </html>

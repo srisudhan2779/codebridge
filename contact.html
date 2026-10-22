@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with the CodeBridge team.">
+    <link rel="stylesheet" href="codebridge.css">
+    <script src="codebridge.js" defer></script>
+    <title>Contact | CodeBridge</title>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Main navigation">
+            <a class="brand" href="index.html" aria-label="CodeBridge home">
+                <span class="brand-mark" aria-hidden="true">CB</span>
+                <span>CodeBridge</span>
+            </a>
+            <div class="nav-links">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="lessons.html">Lessons</a>
+                <a class="nav-link active" href="contact.html" aria-current="page">Contact</a>
+            </div>
+            <a class="nav-action" href="#contact-form">Send a message <span aria-hidden="true">&#8594;</span></a>
+        </nav>
+    </header>
+
+    <main class="page-main contact-main">
+        <section class="page-hero contact-hero" aria-labelledby="contact-title">
+            <p class="eyebrow"><span class="status-dot"></span> WE'D LOVE TO HEAR FROM YOU</p>
+            <h1 id="contact-title">Let's start<br>a <span>conversation.</span></h1>
+            <p class="intro-copy">Have a question about CodeBridge or the learning paths? Leave us a message using the form below.</p>
+        </section>
+
+        <section class="contact-layout" aria-label="Contact information and message form">
+            <div class="contact-info">
+                <p class="eyebrow">GET IN TOUCH</p>
+                <h2>Contact information</h2>
+                <p>No public contact details have been provided yet. Configure and publish an email address or other contact method here when one is available.</p>
+                <div class="setup-note"><span class="note-rule"></span><p>The message form also needs a submission service or backend endpoint before it can deliver messages.</p></div>
+            </div>
+
+            <form class="contact-form" id="contact-form" method="post">
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required>
+                </div>
+                <div class="form-field">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text" required>
+                </div>
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button class="primary-link form-submit" type="submit">Submit message <span aria-hidden="true">&#8594;</span></button>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">CB</span><span>CodeBridge</span></a>
+        <p>Learn at your pace. Build with purpose.</p>
+        <a href="lessons.html">Explore lessons <span aria-hidden="true">&#8594;</span></a>
+    </footer>
+</body>
+</html>
