@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CodeBridge helps students build coding skills through approachable lessons, hands-on practice, and projects.">
+    <meta name="description" content="Learn Python with CodeBridge's friendly classes, hands-on exercises, and beginner-to-advanced learning paths.">
     <link rel="stylesheet" href="codebridge.css">
-    <title>CodeBridge | Your Bridge to the World of Coding</title>
+    <script src="codebridge.js" defer></script>
+    <title>CodeBridge | Python Classes for Every Beginner</title>
 </head>
 <body>
     <header class="site-header">
@@ -19,92 +20,113 @@
                 <a class="nav-link" href="lessons.html">Lessons</a>
                 <a class="nav-link" href="contact.html">Contact</a>
             </div>
-            <a class="nav-action" href="lessons.html">Explore lessons <span aria-hidden="true">&#8594;</span></a>
+            <a class="nav-action" href="lessons.html">Explore Python <span aria-hidden="true">&#8594;</span></a>
         </nav>
     </header>
 
     <main id="home">
         <section class="intro home-hero" aria-labelledby="intro-title">
-            <p class="eyebrow"><span class="status-dot"></span> A place to make ideas click</p>
-            <h1 id="intro-title">Your bridge to<br>the world of <span>coding.</span></h1>
-            <p class="intro-copy">Start with curiosity. Build practical programming skills with friendly lessons, hands-on practice, and projects that bring your ideas to life.</p>
-            <a class="primary-link" href="lessons.html">Explore Lessons <span aria-hidden="true">&#8594;</span></a>
-            <div class="intro-note"><span class="note-rule"></span><span>Learn at your pace. Build with purpose.</span></div>
+            <div class="hero-content">
+                <p class="eyebrow"><span class="status-dot"></span> PYTHON CLASSES MADE APPROACHABLE</p>
+                <h1 id="intro-title">A little code.<br>A lot of <span>possibility.</span></h1>
+                <p class="intro-copy">Learn Python one clear step at a time. Explore the fundamentals, practice real coding skills, and build confidence as you go.</p>
+                <div class="hero-actions">
+                    <a class="primary-link" href="lessons.html">Browse Python classes <span aria-hidden="true">&#8594;</span></a>
+                    <a class="secondary-link" href="#quick-check">Try a quick check <span aria-hidden="true">&#8595;</span></a>
+                </div>
+                <div class="intro-note"><span class="note-rule"></span><span>No experience needed. Just bring your curiosity.</span></div>
+            </div>
+            <aside class="hero-code" aria-label="Example Python code">
+                <div class="code-window-bar"><span></span><span></span><span></span><span>hello.py</span></div>
+                <pre><code><span class="code-purple">def</span> <span class="code-cyan">say_hello</span>(name):
+    message = <span class="code-green">f"Hello, {name}!"</span>
+    <span class="code-purple">return</span> message
+
+<span class="code-cyan">print</span>(say_hello(<span class="code-green">"world"</span>))</code></pre>
+                <p><span class="status-dot"></span> Your first Python idea could start here.</p>
+            </aside>
         </section>
 
         <section class="home-section about-section" aria-labelledby="about-title">
             <div class="home-section-copy">
-                <p class="eyebrow">ABOUT CODEBRIDGE</p>
-                <h2 id="about-title">A welcoming place to find your way into tech.</h2>
-                <p>CodeBridge makes programming accessible to students at every experience level. Our goal is to turn the first intimidating steps into a clear, encouraging path—so more students can understand how technology works and what they can create with it.</p>
+                <p class="eyebrow">WELCOME TO CODEBRIDGE</p>
+                <h2 id="about-title">Python learning with room to grow.</h2>
+                <p>CodeBridge is focused on one thing: helping students learn Python. Start with the basics, build strong problem-solving habits, and move forward at a pace that feels right for you.</p>
             </div>
-            <span class="about-mark" aria-hidden="true">{ }</span>
+            <div class="about-stat" aria-label="One focused learning path">
+                <span>01</span>
+                <p>language<br><strong>one clear path</strong></p>
+            </div>
         </section>
 
         <section class="home-section offerings-section" aria-labelledby="offerings-title">
-            <div class="section-heading">
-                <p class="eyebrow">WHAT WE OFFER</p>
-                <h2 id="offerings-title">Learn by doing, one step at a time.</h2>
+            <div class="section-heading section-heading-row">
+                <div>
+                    <p class="eyebrow">YOUR PYTHON JOURNEY</p>
+                    <h2 id="offerings-title">Build skills that stack.</h2>
+                </div>
+                <p class="section-intro">Learn the core ideas, then put them to work in small projects and guided practice.</p>
             </div>
             <div class="feature-grid">
                 <article class="feature-card">
-                    <span class="feature-number">01</span>
-                    <h3>Friendly lessons</h3>
-                    <p>Build understanding with approachable tutorials that explain the basics clearly.</p>
+                    <span class="feature-number">01 / START</span>
+                    <h3>Get the fundamentals</h3>
+                    <p>Meet variables, data types, and input and output through friendly examples.</p>
                 </article>
                 <article class="feature-card">
-                    <span class="feature-number">02</span>
-                    <h3>Hands-on practice</h3>
-                    <p>Try coding exercises that help new ideas stick through active problem-solving.</p>
+                    <span class="feature-number">02 / PRACTICE</span>
+                    <h3>Think like a programmer</h3>
+                    <p>Use conditions, loops, and functions to solve problems step by step.</p>
                 </article>
                 <article class="feature-card">
-                    <span class="feature-number">03</span>
-                    <h3>Personal projects</h3>
-                    <p>Use what you learn to make useful, creative projects of your own.</p>
+                    <span class="feature-number">03 / CREATE</span>
+                    <h3>Make it your own</h3>
+                    <p>Bring your skills together in small projects and practical exercises.</p>
                 </article>
             </div>
         </section>
 
-        <section class="home-section paths-section" aria-labelledby="paths-title">
-            <div class="section-heading">
-                <p class="eyebrow">LEARNING PATHS</p>
-                <h2 id="paths-title">Choose a language. Start building.</h2>
+        <section class="home-section path-section" aria-labelledby="path-title">
+            <div class="path-copy">
+                <p class="eyebrow">A CLEAR LEARNING PATH</p>
+                <h2 id="path-title">Start simple.<br>Keep building.</h2>
+                <p>Move from your first lines of Python to more confident, independent projects. Choose a level that fits where you are today.</p>
+                <a class="text-link" href="lessons.html">See all Python classes <span aria-hidden="true">&#8594;</span></a>
             </div>
-            <p class="section-intro">Explore the building blocks of the web or take your first steps with general-purpose programming.</p>
-            <div class="path-list" aria-label="Programming subjects">
-                <a class="path-chip" href="lessons.html#python">Python <span aria-hidden="true">&#8599;</span></a>
-                <a class="path-chip" href="lessons.html#java">Java <span aria-hidden="true">&#8599;</span></a>
-                <a class="path-chip" href="lessons.html#html">HTML <span aria-hidden="true">&#8599;</span></a>
-                <a class="path-chip" href="lessons.html#css">CSS <span aria-hidden="true">&#8599;</span></a>
-                <a class="path-chip" href="lessons.html#javascript">JavaScript <span aria-hidden="true">&#8599;</span></a>
-            </div>
+            <ol class="path-steps">
+                <li><span>01</span><div><strong>Beginner</strong><p>Learn the syntax and core building blocks.</p></div><span class="path-step-arrow" aria-hidden="true">&#8599;</span></li>
+                <li><span>02</span><div><strong>Intermediate</strong><p>Combine ideas to solve more involved problems.</p></div><span class="path-step-arrow" aria-hidden="true">&#8599;</span></li>
+                <li><span>03</span><div><strong>Advanced</strong><p>Structure programs and develop project skills.</p></div><span class="path-step-arrow" aria-hidden="true">&#8599;</span></li>
+            </ol>
         </section>
 
-        <section class="home-section benefits-section" aria-labelledby="benefits-title">
-            <div class="section-heading">
-                <p class="eyebrow">WHY CHOOSE CODEBRIDGE</p>
-                <h2 id="benefits-title">Skills that reach beyond the screen.</h2>
+        <section class="home-section quick-check" id="quick-check" aria-labelledby="quick-check-title">
+            <div>
+                <p class="eyebrow">A 10-SECOND PYTHON CHECK</p>
+                <h2 id="quick-check-title">What does <code>print("Hi!")</code> do?</h2>
+                <p>Choose an answer to see if you got it.</p>
             </div>
-            <div class="benefit-row">
-                <p><span aria-hidden="true">01 /</span> Learn to break big challenges into manageable steps.</p>
-                <p><span aria-hidden="true">02 /</span> Grow confidence by making ideas work in practice.</p>
-                <p><span aria-hidden="true">03 /</span> Develop technical skills you can use in real projects.</p>
+            <div class="quiz-options" role="group" aria-label="Choose what the Python print function does">
+                <button class="quiz-option" type="button" data-correct="false">Saves text in a file</button>
+                <button class="quiz-option" type="button" data-correct="true">Displays Hi! as output</button>
+                <button class="quiz-option" type="button" data-correct="false">Creates a new variable</button>
+                <p class="quiz-feedback" id="quiz-feedback" role="status" aria-live="polite">Pick an answer to reveal the result.</p>
             </div>
         </section>
 
         <section class="callout-section" aria-labelledby="callout-title">
             <div>
-                <p class="eyebrow">YOUR NEXT STEP</p>
-                <h2 id="callout-title">Ready to make something?</h2>
-                <p>Pick a topic and find a comfortable place to begin.</p>
+                <p class="eyebrow">READY WHEN YOU ARE</p>
+                <h2 id="callout-title">Your first Python class is one click away.</h2>
+                <p>Start with the beginner classes and build from there.</p>
             </div>
-            <a class="primary-link" href="lessons.html">Explore Lessons <span aria-hidden="true">&#8594;</span></a>
+            <a class="primary-link" href="lessons.html#beginner">Start learning Python <span aria-hidden="true">&#8594;</span></a>
         </section>
     </main>
 
     <footer class="site-footer">
         <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">CB</span><span>CodeBridge</span></a>
-        <p>Learn at your pace. Build with purpose.</p>
+        <p>Python skills, one step at a time.</p>
         <a href="contact.html">Get in touch <span aria-hidden="true">&#8594;</span></a>
     </footer>
 </body>
