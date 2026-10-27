@@ -79,7 +79,16 @@ document.querySelectorAll('.lesson-button').forEach((link) => {
 if (contactForm instanceof HTMLFormElement && formStatus instanceof HTMLElement) {
 	contactForm.addEventListener('submit', (event) => {
 		event.preventDefault();
-		formStatus.textContent = 'This form is not connected to a submission service yet, so your message was not sent. Configure a backend before sending messages.';
+		const formData = new FormData(contactForm);
+		const name = String(formData.get('name') ?? '');
+		const email = String(formData.get('email') ?? '');
+		const subject = String(formData.get('subject') ?? '');
+		const message = String(formData.get('message') ?? '');
+		const emailSubject = `CodeBridge inquiry: ${subject}`;
+		const emailBody = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+
+		window.location.href = `mailto:thecodebridgeacademy@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+		formStatus.textContent = 'Your email app should open with the message ready. Review and send it to contact CodeBridge.';
 	});
 
 	contactForm.addEventListener('input', () => {
